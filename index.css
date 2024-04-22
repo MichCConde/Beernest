@@ -4,3 +4,38 @@ Orange: #e48109
 
 White: #fbf3f2
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    text-align: center;
+    background-color: #92211d;    
+}
+.footer_container{
+    background-color: aquamarine;
+    height:300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    grid: 200px / auto auto ;
+}
+.footerleft_container{
+    background-color: bisque;
+    padding: 30px;
+    justify-content: center;
+}
+.footerright_container{
+    background-color: #fbf3f2;
+    padding: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    
+}
+.footerrightup,.footerrightdown{
+    display: flex;
+}
+
+
