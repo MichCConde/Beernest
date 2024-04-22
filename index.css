@@ -1,14 +1,165 @@
 /*
 Main Red: #92211d
 Orange: #e48109
-
 White: #fbf3f2
 */
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    padding: 3rem 300px 1.5rem;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Sticky header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.headerChange {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.89);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* Navigations */
+header a {
+    text-decoration: none;
+}
+.nav__link {
+    color: #92211d;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 22px; 
+    padding: 0 5px;
+    margin: 20px;
+    line-height: 25px;
+    transition: all 0.4s;
+    position: relative;
+}
+/* Effects */
+.nav__link:hover {
+    opacity: 1;
+}
+.nav__link::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: #d90429;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: all 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+.nav__link:hover::after,
+.nav__link:focus::after {
+    opacity: 1;
+}
+  /* Logo */
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo img {
+    max-height: 100px;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+  /* Button */
+header button {
+    background-color: #d90427;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 1rem;
+    font-size: 22px;
+    color: #f4f4f4;
+    font-family: "Bebas Neue", sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 50px;
+    transform: scale(0.9);
+}
+button:hover {
+    background-color: #d90427c7; 
+    opacity: 1;
+    transform: scale(1);
+}
+.header-right {
+    float: right;
+}
+.heroSection{
+    margin: auto;
+    color: white;
+    background-color:#92211d;
+    background-size: 100%;
+}
+.heroSection .content{
+    flex: auto;
+    margin: 0px 300px 0px;
+    padding: 150px 0;
+}
+  
+.heroSection .content h1 {
+    margin: 0;
+    font-size: 120px;
+}
+.heroSection .content p {
+    margin: 0;
+    font-size: 32px;
+}
+.socmedContainer {
+    flex: auto;
+    padding: 1rem 1rem 1rem 0rem;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+
+
+
+
+
 footer{
     text-align: center;
     background-color: #92211d;    
