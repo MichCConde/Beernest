@@ -569,12 +569,19 @@ section {
 .about .about-img {
   min-height: 500px;
 }
+.about .section-header p{
+  font-weight: 700;
+  font-size: 230px;
+}
 
 .about h3 {
   font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 30px;
+  font-size: 36px;  
   font-family: var(--font-secondary);
+}
+
+.about h4{
+  color: white;
 }
 
 .about .call-us {
@@ -819,10 +826,17 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
+
+
 .menu .nav-tabs {
   border: 0;
 }
-
+.menu .container h2{
+  color: white;
+}
+.menu .container p{
+  color: #E38109;
+}
 .menu .nav-link {
   margin: 0 10px;
   padding: 10px 5px;
@@ -832,7 +846,7 @@ section {
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid #b6b6bf;
+  border-bottom: 2px solid #fafaff;
 }
 
 @media (max-width: 575px) {
@@ -1490,9 +1504,7 @@ section {
   background-size: cover;
   position: relative;
   min-height: 60vh;
-  padding: 160px 0 60px 0;
-  background-image: url('/assets/img/shawarmas/herobgBeernest.png');
-  
+  padding: 160px 0 60px 0;    
 }
 
 .hero h2 {
