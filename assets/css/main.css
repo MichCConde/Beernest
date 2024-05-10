@@ -257,6 +257,7 @@ section {
   border-right: 150px solid transparent;
   border-top: 140px solid white;
   width: 100%;
+  left: 5.5%;
   position: relative;
 }
 .logo-container #logo {
@@ -297,6 +298,7 @@ section {
 }
 .navbar li a {
   margin: 2rem 0 1rem 0;
+  text-align: center;
 }
 /*--------------------------------------------------------------
 # Desktop Navigation
