@@ -252,26 +252,39 @@ section {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 .logo-container {
-  max-width: 200px;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-  border-top: 140px solid white;
-  width: 100%;
-  left: 5.5%;
-  position: relative;
+  max-width: 100px;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 120px solid white;
+  top: 0;
+  position: absolute;
+  transition: 0.5s;
 }
-.logo-container #logo {
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  float: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+}
+#logo {
   position: absolute;
   top: -125px;
   transform: translateX(-50%);
   z-index: 999;
 }
 .header .logo img {
-  max-height: 10px;
-  margin-right: 6px;
+  max-width: 50px;
+  width: 100%;
 }
 .header .logo h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: #E38109;
   margin: 0;
@@ -287,7 +300,8 @@ section {
   color: #fff;
   background: var(--color-primary);
   padding: 16px 32px;
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-top: 1.8rem;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -300,13 +314,15 @@ section {
   margin: 2rem 0 1rem 0;
   text-align: center;
 }
+#navbar {
+  float: right;
+}
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
-    
   }
 
   .navbar ul {
@@ -335,7 +351,7 @@ section {
     justify-content: space-between;
     padding: 0 0.5rem;
     font-family: var(--font-secondary);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #fff;
     white-space: nowrap;
