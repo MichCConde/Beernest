@@ -503,7 +503,7 @@ section {
   font-size: 40px;
 }
   .hero {
-    max-height: 10%;
+    max-height: 100%;
     max-width: 100%;
   }
 
