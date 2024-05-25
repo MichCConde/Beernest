@@ -258,6 +258,7 @@ section {
   border-top: 120px solid white;
   top: 0;
   position: absolute;
+  background-image: url(/assets/img/beernestlogo.png);
   transition: 0.5s;
 }
 .center {
@@ -316,6 +317,9 @@ section {
 }
 #navbar {
   float: right;
+}
+.header .col-2 .navbar-button{
+  padding-right: 40px;
 }
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -482,6 +486,25 @@ section {
     bottom: 0;
     transition: 0.3s;
     z-index: 9997;
+  }
+  .hero img{
+    max-width: 380px;
+  }
+  .navbar .logo{
+    max-width: 100px;
+  }
+  .section-header p{
+    font-size: 50px;
+  }
+.gallery .section-header p{
+  font-size: 35px;
+}
+.chefs .section-header p {
+  font-size: 40px;
+}
+  .hero {
+    max-height: 10%;
+    max-width: 100%;
   }
 
   .navbar ul {
@@ -1370,6 +1393,10 @@ color: #E38109;
   background: #f4f4f4;
   padding: 30px;
   height: 100%;
+}
+
+.contact .section-header p{
+  color: #E38109;
 }
 
 .contact .info-item .icon {
