@@ -54,10 +54,9 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
-  
 }
 
 .section-bg {
@@ -67,19 +66,12 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 30px;
-  
-
 }
-
-
-
 
 .section-header p {
   margin: 0;
   font-size: 80px;
   font-weight: 700;
-  
-  
   color: #C88C8A;
 }
 
@@ -494,12 +486,12 @@ section {
   .section-header p{
     font-size: 50px;
   }
-.gallery .section-header p{
-  font-size: 35px;
-}
-.chefs .section-header p {
-  font-size: 40px;
-}
+  .gallery .section-header p{
+    font-size: 35px;
+  }
+  .chefs .section-header p {
+    font-size: 40px;
+  }
   .hero {
     max-height: 100%;
     max-width: 100%;
@@ -1541,10 +1533,6 @@ color: #E38109;
   height: 100%;
   background-size: cover;
   position: relative;
-  
-  
-  
-  
 }
 
 .hero h2 {
