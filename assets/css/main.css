@@ -244,13 +244,15 @@ section {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 .logo-container {
-  max-width: 100px;
+  width: 100px;
   border-left: 120px solid transparent;
   border-right: 120px solid transparent;
   border-top: 120px solid white;
   top: 0;
   position: absolute;
-  background-image: url(/assets/img/beernestlogo.png);
+  background-size: contain; /* Ensures the image scales to fit the container */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image within the container */
   transition: 0.5s;
 }
 .center {
@@ -271,11 +273,9 @@ section {
   top: -125px;
   transform: translateX(-50%);
   z-index: 999;
+  background: url(/assets/img/Logo/beernestlogo.png);
 }
-.header .logo img {
-  max-width: 50px;
-  width: 100%;
-}
+
 .header .logo h1 {
   font-size: 24px;
   font-weight: 700;
@@ -467,6 +467,53 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
+@media(max-width: 1135px){
+  .navbar .logo{
+    max-width: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-container {
+    max-width: 80px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid white;
+    
+  }
+  #logo {
+    position: absolute;
+    top: -100px;
+    transform: translateX(-50%);
+    z-index: 999;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    max-width: 60px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid white;
+  }
+  #logo {
+    top: -90px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-container {
+    max-width: 40px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid white;
+  }
+  #logo {
+    top: -80px;
+  }
+}
+
+
 @media (max-width: 1279px) {
   .navbar {
     position: fixed;
@@ -480,9 +527,13 @@ section {
     z-index: 9997;
   }
 
+
+    
+
   .navbar .logo{
-    max-width: 100px;
+    max-width: 70px;
   }
+
   .section-header p{
     font-size: 50px;
   }
@@ -601,6 +652,9 @@ section {
 
 .about .about-img {
   min-height: 500px;
+  
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+ 
 }
 
 .about h3 {
